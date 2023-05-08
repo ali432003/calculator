@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body>
+    <div class="calculator">
+        <input type="text" placeholder="0" id="result" disabled>
+        <div id="top-div">
+            <button  onclick="clearResult()">AC</button>
+            <button  onclick="clearResult()">DEL</button>
+            <button onclick="buttonPressed('%')">%</button>
+            <button onclick="buttonPressed('/')">/</button>
+        </div>
+        <div class="rem-div">
+            <button onclick="buttonPressed('7')">7</button>
+            <button onclick="buttonPressed('8')">8</button>
+            <button onclick="buttonPressed('9')">9</button>
+            <button onclick="buttonPressed('*')">x</button>
+        </div>
+        <div class="rem-div">
+            <button onclick="buttonPressed('4')">4</button>
+            <button onclick="buttonPressed('5')">5</button>
+            <button onclick="buttonPressed('6')">6</button>
+            <button onclick="buttonPressed('-')">-</button>
+        </div>
+        <div class="rem-div">
+            <button onclick="buttonPressed('1')">1</button>
+            <button onclick="buttonPressed('2')">2</button>
+            <button onclick="buttonPressed('3')">3</button>
+            <button onclick="buttonPressed('+')">+</button>
+        </div>
+        <div class="rem-div">
+            <button onclick="buttonPressed('00')">00</button>
+            <button onclick="buttonPressed('0')">0</button>
+            <button onclick="buttonPressed('.')">.</button>
+            <button onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    
+    
+    <script src="index.js"></script>
+  </body>
+</html>
